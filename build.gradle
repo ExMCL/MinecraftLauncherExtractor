@@ -1,0 +1,23 @@
+group 'MinecraftLauncherExtractor'
+
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = "com.n9mtq4.exmcl.mcle.Extractor"
+sourceCompatibility = 1.5
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile files("Minecraft.jar")
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': mainClassName
+    }
+//    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+}

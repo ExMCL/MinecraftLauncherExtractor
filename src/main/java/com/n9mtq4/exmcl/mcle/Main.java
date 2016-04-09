@@ -10,7 +10,7 @@ import static com.n9mtq4.exmcl.mcle.Unpacker.unpack;
  *
  * @author Will "n9Mtq4" Bresnahan
  */
-public class Extractor {
+public class Main {
 	
 	/**
 	 * 0 - Minecraft.jar location
